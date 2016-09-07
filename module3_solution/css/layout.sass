@@ -3,18 +3,22 @@
   padding: 0
 
 /******HEADER*****/
-.nav-brand
+.navbar-brand
   font-size: 2.6em
   font-family: monospace
   color: rgb(41, 48, 46)
-  cursor: pointer
+  margin-top: 20px
+  margin-bottom: 20px
   text-decoration: none
   &:hover
     opacity: 0.8
     text-decoration: none
 
+.navbar-toggle
+  margin-top: 25px
+
 .navbar-collapse
-  float: right
+  clear: both
 
 h1
   margin-top: 15px
@@ -34,5 +38,13 @@ h1
     font-size: 1.5em
 
 @media (min-width: 768px)
-  .icon-bar
-    display: none
+  #nav-list
+    visibility:  hidden
+
+@media (max-width: 767px)
+  #nav-list
+    text-align: center
+    li
+      border: 2px solid
+  .col-xs-12
+    margin-right: 35px
